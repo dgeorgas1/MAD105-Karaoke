@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Karaoke</string>
+    <string name="songSearchEdit">Enter A Song Name</string>
+    <string name="addSongButton">Add A Song</string>
+    <string name="deleteSongButton">Delete A Song</string>
+    <string name="selectSongButton">Select Song</string>
+    <string name="goBackButton">Go Back</string>
+    <string name="selectedSongText">Selected Song</string>
+</resources>
