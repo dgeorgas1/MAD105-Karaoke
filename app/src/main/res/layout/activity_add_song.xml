@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSongActivity">
+
+    <TextView
+        android:id="@+id/textAddTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/labelAddTitle"
+        android:textSize="@dimen/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAddSongLabel"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/labelAddSong"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddTitleLabel" />
+
+    <TextView
+        android:id="@+id/textAddArtistLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/labelAddArtist"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddSongLabel" />
+
+    <TextView
+        android:id="@+id/textAddGenreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/labelAddGenre"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddArtistLabel" />
+
+    <TextView
+        android:id="@+id/textAddDurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/labelAddDuration"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddGenreLabel" />
+
+    <TextView
+        android:id="@+id/textAddLyricsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/labelAddLyrics"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddDurationLabel" />
+
+    <EditText
+        android:id="@+id/editAddSongEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/textAddSongLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textAddTitleLabel" />
+
+    <EditText
+        android:id="@+id/editAddArtistEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/textAddArtistLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editAddSongEntry" />
+
+    <EditText
+        android:id="@+id/editAddGenreEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/textAddGenreLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editAddArtistEntry" />
+
+    <EditText
+        android:id="@+id/editAddDurationEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toEndOf="@+id/textAddDurationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editAddGenreEntry" />
+
+    <EditText
+        android:id="@+id/editAddLyricsEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textAddLyricsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editAddDurationEntry" />
+
+    <Button
+        android:id="@+id/buttonAddCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/buttonAddCancel"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAddLyricsLabel"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <Button
+        android:id="@+id/buttonAddConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAddConfirm"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddCancel"
+        app:layout_constraintTop_toBottomOf="@+id/editAddDurationEntry"
+        app:layout_constraintVertical_bias="0.952" />
+</androidx.constraintlayout.widget.ConstraintLayout>

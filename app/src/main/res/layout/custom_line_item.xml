@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textCustomLineSong"
+        android:layout_width="215dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineSongLabel" />
+
+    <TextView
+        android:id="@+id/textCustomLineArtist"
+        android:layout_width="215dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineArtistLabel" />
+
+    <TextView
+        android:id="@+id/textCustomLineGenre"
+        android:layout_width="144dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/textCustomLineSong"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineGenreLabel" />
+
+    <TextView
+        android:id="@+id/textCustomLineDuration"
+        android:layout_width="142dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="@dimen/widgetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/textCustomLineArtist"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineDurationLabel" />
+
+    <TextView
+        android:id="@+id/textCustomLineSongLabel"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/labelCustomSongName"
+        android:textSize="@dimen/widgetText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCustomLineArtistLabel"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelCustomArtist"
+        android:textSize="@dimen/widgetText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineSong" />
+
+    <TextView
+        android:id="@+id/textCustomLineGenreLabel"
+        android:layout_width="49dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/labelCustomGenre"
+        android:textSize="@dimen/widgetText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textCustomLineSongLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCustomLineDurationLabel"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelCustomDuration"
+        android:textSize="@dimen/widgetText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toEndOf="@+id/textCustomLineArtistLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomLineGenre" />
+</androidx.constraintlayout.widget.ConstraintLayout>

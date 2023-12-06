@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Karaoke"
         tools:targetApi="31">
         <activity
+            android:name=".DeleteSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddSongActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,9 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SecondActivity">
-        </activity>
+        <activity android:name=".SelectSongActivity" />
     </application>
 
 </manifest>

@@ -1,9 +1,40 @@
 <resources>
-    <string name="app_name">Karaoke</string>
-    <string name="songSearchEdit">Enter A Song Name</string>
-    <string name="addSongButton">Add A Song</string>
-    <string name="deleteSongButton">Delete A Song</string>
-    <string name="selectSongButton">Select Song</string>
-    <string name="goBackButton">Go Back</string>
+    <!--Main-->
+    <string name="app_name"><u>Karaoke</u></string>
+    <string name="editMainSearchHint">Enter A Song Name</string>
+    <string name="buttonMainSearch">Search</string>
+    <string name="buttonMainAdd">Add</string>
+    <string name="buttonMainDelete">Delete</string>
+
+
+    <!--Add A Song-->
+    <string name="labelAddTitle"><u>Add A Song</u></string>
+    <string name="labelAddSong">Name: </string>
+    <string name="labelAddArtist">Artist: </string>
+    <string name="labelAddGenre">Genre: </string>
+    <string name="labelAddDuration">Duration: </string>
+    <string name="labelAddLyrics">Lyrics: </string>
+
+    <string name="buttonAddCancel">Cancel</string>
+    <string name="buttonAddConfirm">Add</string>
+
+
+    <!--Delete A Song-->
+    <string name="labelDeleteTitle"><u>Delete A Song</u></string>
+    <string name="labelDeleteSong">Name: </string>
+
+    <string name="buttonDeleteCancel">Cancel</string>
+    <string name="buttonDeleteConfirm">Delete</string>
+
+
+    <!--Select Song-->
+    <string name="goBackButton">Back</string>
     <string name="selectedSongText">Selected Song</string>
+
+
+    <!--Custom Line Item-->
+    <string name="labelCustomSongName">Name</string>
+    <string name="labelCustomArtist">Artist</string>
+    <string name="labelCustomGenre">Genre</string>
+    <string name="labelCustomDuration">Duration</string>
 </resources>
